@@ -1,30 +1,28 @@
 --
--- Table structure for table `optician`
+-- Table structure for table `dentist`
 --
 
-DROP TABLE IF EXISTS `optician`;
+DROP TABLE IF EXISTS `dentist`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `optician` (
-  `OPTICIANID` int(10) NOT NULL AUTO_INCREMENT,
-  nhs tinyint(1) DEFAULT NULL,
+CREATE TABLE `dentist` (
+  `DentistID` int(11) NOT NULL AUTO_INCREMENT,
+  `nhs` tinyint(1) DEFAULT NULL,
   `name` varchar(50) DEFAULT NULL,
   `address` varchar(50) DEFAULT NULL,
-  `city` varchar(20)DEFAULT NULL,
   `postcode` varchar(12) DEFAULT NULL,
   `phone` varchar(12) DEFAULT NULL,
-  
-  PRIMARY KEY (`OpticianID`)
+  PRIMARY KEY (`DentistID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `optician`
+-- Dumping data for table `dentist`
 --
 
-LOCK TABLES `optician` WRITE;
-/*!40000 ALTER TABLE `optician` DISABLE KEYS */;
-INSERT INTO `optician` VALUES (1,1,"Iris Domiciliary Services","Technology House,GF unit 18/19,2 Lissadel Road,Salford","Salford","M6 6AP","1612782472")
+LOCK TABLES `dentist` WRITE;
+/*!40000 ALTER TABLE `dentist` DISABLE KEYS */;
+INSERT INTO `dentist` VALUES (1,1,"Iris Domiciliary Services","Technology House,GF unit 18/19,2 Lissadel Road,Salford","Salford","M6 6AP","1612782472")
 (2,1,"Boots-Blackburn","7 Stonybutts,Blackburn Shopping Centre,,Blackburn","Blackburn","BB1 7JD","1254593923")
 (3,1,"Susan Hilton Opticians",",45 Bridge Street,,Darwen","Darwen","BB3 2AA","1234584933")
 (4,0,"J E Rainford Ltd","325 Wigan Road,Deane,Bolton,Lancashire","Lancashire","BL3 5QH","1204653649")
@@ -123,5 +121,5 @@ INSERT INTO `optician` VALUES (1,1,"Iris Domiciliary Services","Technology House
 (97,1,"Peter E Waite (Optometrist)",",8 Horton Square,Highgate,Birmingham","Birmingham","B12 0YR","1214401636")
 (98,1,"Portland Eye Care Services Ltd",",345 Coventry Road,Small Heath,Birmingham","Birmingham","B10 0SN","1217721442")
 (99,1,"Roots Opticians","168 Trinity Road,Aston,Birmingham,",,"B6 6HZ","1213285700")
-/*!40000 ALTER TABLE `optician` ENABLE KEYS */;
+/*!40000 ALTER TABLE `dentist` ENABLE KEYS */;
 UNLOCK TABLES;

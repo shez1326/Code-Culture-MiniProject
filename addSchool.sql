@@ -6,7 +6,7 @@ CREATE TABLE `school` (
   `name` varchar(50) DEFAULT NULL,
   `address` varchar(50) DEFAULT NULL,
   `postcode` varchar(12) DEFAULT NULL,
-  `phone` varchar(10) DEFAULT NULL,
+  `phone` varchar(12) DEFAULT NULL,
   PRIMARY KEY (`SCHOOLID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;

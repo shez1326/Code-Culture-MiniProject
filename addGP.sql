@@ -8,10 +8,10 @@ DROP TABLE IF EXISTS `gp`;
 CREATE TABLE `gp` (
   `GPID` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) DEFAULT NULL,
-  `postcode` varchar(12) DEFAULT NULL,
-  `nhs` tinyint(1) DEFAULT NULL,
-  `phone` varchar(12) DEFAULT NULL,
   `address` varchar(50) DEFAULT NULL,
+  `postcode` varchar(12) DEFAULT NULL,
+  `phone` varchar(12) DEFAULT NULL,
+  `nhs` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`GPID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
