@@ -22,7 +22,15 @@ public class Optician {
     this.postcode = postcode;
     this.phoneNumber = phoneNumber;
     this.nhsORprivate = nhsORprivate;
-}
+ }
+ 
+  public Optician(String opticianName, String address, String postcode, String phoneNumber, Boolean nhsORprivate) {
+    this.opticianName = opticanName;
+    this.address = address;
+    this.postcode = postcode;
+    this.phoneNumber = phoneNumber;
+    this.nhsORprivate = nhsORprivate;
+  }
   
   public int getID() {
     return ID;
