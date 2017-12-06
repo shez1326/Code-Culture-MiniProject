@@ -7,12 +7,12 @@ DROP TABLE IF EXISTS `optician`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `optician` (
   `OPTICIANID` int(10) NOT NULL AUTO_INCREMENT,
-  nhs tinyint(1) DEFAULT NULL,
+  `nhs` tinyint(1) DEFAULT NULL,
   `name` varchar(50) DEFAULT NULL,
   `address` varchar(50) DEFAULT NULL,
-  `city` varchar(20)DEFAULT NULL,
-  `postcode` varchar(12) DEFAULT NULL,
-  `phone` varchar(12) DEFAULT NULL,
+  `city` varchar(20) DEFAULT NULL,
+  `postcode` varchar(8) DEFAULT NULL,
+  `phone` varchar(10) DEFAULT NULL,
   
   PRIMARY KEY (`OpticianID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
