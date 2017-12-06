@@ -1,0 +1,876 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "miniproject"
+			"resizable": false
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.CardLayout ) ) {
+				name: "cards"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "0, 0, 0"
+					"$rowSpecs": "0, 0, 0, 0, 0, 0, 0, 0"
+					"$hGap": 5
+					"$vGap": 5
+				} ) {
+					name: "MainMenu"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "welcomLabel"
+						"text": "welcome"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridwidth": 3
+						"hAlign": 0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "choiceMessage"
+						"text": "what would you like to do "
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 1
+						"gridwidth": 3
+						"hAlign": 0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "spacing"
+						"text": "            "
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 2
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "swapToAddPatient"
+						"text": "add patient"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "swapToAddPatientActionPerformed", true ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "swapToAddPatientActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 1
+						"gridy": 2
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "spacing2"
+						"text": "            "
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 2
+						"gridx": 2
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "swapToExistingPatients"
+						"text": "existing patients"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 3
+						"gridx": 1
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "swapToAddService"
+						"text": "add service"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "swapToAddServiceActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 1
+						"gridy": 4
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "swapToSearchServices"
+						"text": "search services"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "swapToSearchServicesActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 1
+						"gridy": 5
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "main"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "0, 0, 0, 0, 0, 0, 0, 0, 0, 0"
+					"$rowSpecs": "0, 0, 0, 0, 0, 0, 0, 0, 0, 0"
+					"$hGap": 5
+					"$vGap": 5
+				} ) {
+					name: "Searchservices"
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "service"
+						"model": &DefaultComboBoxModel0 new javax.swing.DefaultComboBoxModel {
+							selectedItem: "GP"
+							addElement( "GP" )
+							addElement( "School" )
+							addElement( "Dentists" )
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 3
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField7"
+						"text": "search"
+						"toolTipText": "Search"
+						"preferredSize": &Dimension0 new java.awt.Dimension( 200, 37 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 1
+						"gridy": 3
+						"gridwidth": 3
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button1"
+						"text": "search"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 4
+						"gridy": 3
+						"gridwidth": 2
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "radioButton4"
+						"text": "nhs"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 6
+						"gridy": 3
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "radioButton5"
+						"text": "non nhs"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 7
+						"gridy": 3
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "radioButton6"
+						"text": "both"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 8
+						"gridy": 3
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.CardLayout ) ) {
+						name: "services"
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane5"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "GP"
+								"rowSelectionAllowed": false
+								"model": &SwingTableModel0 new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+									add( new java.util.Vector {
+										add( "test 1" )
+										add( "wdad,adwd, road" )
+										add( "LL16 5ar" )
+										add( "0910328314" )
+										add( "9-5" )
+										add( null )
+										add( null )
+										add( null )
+									} )
+									add( new java.util.Vector {
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+									} )
+									add( new java.util.Vector {
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+									} )
+									add( new java.util.Vector {
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+									} )
+									add( new java.util.Vector {
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+									} )
+									add( new java.util.Vector {
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+									} )
+									add( new java.util.Vector {
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+									} )
+									add( new java.util.Vector {
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+									} )
+									add( new java.util.Vector {
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+									} )
+									add( new java.util.Vector {
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+										add( null )
+									} )
+								}, new java.util.Vector {
+									add( "Name" )
+									add( "Address" )
+									add( "postcode" )
+									add( "telephone" )
+									add( "openning hours" )
+									add( "distance (Miles)" )
+									add( "Distance (Km)" )
+									add( null )
+								}, new java.util.Vector {
+									add( class java.lang.String )
+									add( class java.lang.String )
+									add( class java.lang.String )
+									add( class java.lang.String )
+									add( class java.lang.String )
+									add( class java.lang.Integer )
+									add( class java.lang.Integer )
+									add( class java.lang.Boolean )
+								}, new java.util.Vector {
+									add( false )
+									add( false )
+									add( false )
+									add( false )
+									add( false )
+									add( false )
+									add( false )
+									add( null )
+								}, new java.util.Vector {
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+								} )
+							} )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "card1"
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane6"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "School"
+								"rowSelectionAllowed": false
+								"model": #SwingTableModel0
+							} )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "card2"
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane7"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "Dentist"
+								"rowSelectionAllowed": false
+								"model": #SwingTableModel0
+							} )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "card3"
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane8"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "optiains"
+								"rowSelectionAllowed": false
+								"model": #SwingTableModel0
+							} )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "card4"
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 4
+						"gridwidth": 9
+						"gridheight": 4
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button3"
+						"text": "back to main menu"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 6
+						"gridy": 8
+						"gridwidth": 3
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "searchServices"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "0, 0, 0, 0, 0, 0, 0, 0"
+					"$rowSpecs": "0, 0, 0, 0, 0, 0, 0, 0, 0, 0"
+					"$hGap": 5
+					"$vGap": 5
+				} ) {
+					name: "Services"
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "serviceSelctor"
+						"model": #DefaultComboBoxModel0
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 3
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField6"
+						"text": "search"
+						"toolTipText": "Search"
+						"preferredSize": #Dimension0
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 1
+						"gridy": 3
+						"gridwidth": 3
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "searchButton"
+						"text": "search"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 4
+						"gridy": 3
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "radioButton2"
+						"text": "nhs"
+						"$buttonGroup": new FormReference( "nhsOrNot" )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 5
+						"gridy": 3
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "radioButton3"
+						"text": "non nhs"
+						"$buttonGroup": new FormReference( "nhsOrNot" )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 6
+						"gridy": 3
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "radioButton1"
+						"text": "both"
+						"$buttonGroup": new FormReference( "nhsOrNot" )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 7
+						"gridy": 3
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.CardLayout ) ) {
+						name: "tableServices"
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane1"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "table1"
+								"rowSelectionAllowed": false
+								"model": #SwingTableModel0
+							} )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "card1"
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane2"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "table2"
+								"rowSelectionAllowed": false
+								"model": #SwingTableModel0
+							} )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "card2"
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane3"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "table3"
+								"rowSelectionAllowed": false
+								"model": #SwingTableModel0
+							} )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "card3"
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane4"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "table4"
+								"rowSelectionAllowed": false
+								"model": #SwingTableModel0
+							} )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "card4"
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 4
+						"gridwidth": 8
+						"gridheight": 4
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "backToMainMenu"
+						"text": "back to main menu"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backToMainMenuActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 5
+						"gridy": 8
+						"gridwidth": 3
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "services"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "0, 0, 0, 0, 0, 0, 0"
+					"$rowSpecs": "0, 0, 0, 0, 0, 0, 0, 0, 0"
+					"$hGap": 10
+					"$vGap": 10
+				} ) {
+					name: "addPatient"
+					"preferredSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"minimumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "titleLabel"
+						"text": "Title"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 3
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "title"
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "  "
+							addElement( "  " )
+							addElement( "Mr" )
+							addElement( "Mrs" )
+							addElement( "Miss" )
+							addElement( "Ms" )
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 4
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "firstNameLabel"
+						"text": "First name"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 1
+						"gridx": 3
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "firstName"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 4
+						"gridy": 1
+						"gridwidth": 3
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "surnameLabel"
+						"text": "surname"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 2
+						"gridx": 3
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "surname"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 4
+						"gridwidth": 3
+						"gridy": 2
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "dobLabel"
+						"text": "Date of Birth"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 3
+						"gridx": 3
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "day"
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "1"
+							addElement( "1" )
+							addElement( "2" )
+							addElement( "3" )
+							addElement( "4" )
+							addElement( "5" )
+							addElement( "6" )
+							addElement( "7" )
+							addElement( "8" )
+							addElement( "9" )
+							addElement( "10" )
+							addElement( "11" )
+							addElement( "12" )
+							addElement( "13" )
+							addElement( "14" )
+							addElement( "15" )
+							addElement( "16" )
+							addElement( "17" )
+							addElement( "18" )
+							addElement( "19" )
+							addElement( "20" )
+							addElement( "21" )
+							addElement( "22" )
+							addElement( "23" )
+							addElement( "24" )
+							addElement( "25" )
+							addElement( "26" )
+							addElement( "27" )
+							addElement( "28" )
+							addElement( "29" )
+							addElement( "30" )
+							addElement( "31" )
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 4
+						"gridy": 3
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "month"
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "1"
+							addElement( "1" )
+							addElement( "2" )
+							addElement( "3" )
+							addElement( "4" )
+							addElement( "5" )
+							addElement( "6" )
+							addElement( "7" )
+							addElement( "8" )
+							addElement( "9" )
+							addElement( "10" )
+							addElement( "11" )
+							addElement( "12" )
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 5
+						"gridy": 3
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "year"
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "2017"
+							addElement( "2017" )
+							addElement( "2016" )
+							addElement( "2015" )
+							addElement( "2014" )
+							addElement( "2013" )
+							addElement( "2012" )
+							addElement( "2011" )
+							addElement( "2010" )
+							addElement( "2009" )
+							addElement( "2008" )
+							addElement( "2007" )
+							addElement( "2006" )
+							addElement( "2005" )
+							addElement( "2004" )
+							addElement( "2003" )
+							addElement( "2002" )
+							addElement( "2001" )
+							addElement( "2000" )
+							addElement( "1999" )
+							addElement( "1998" )
+							addElement( "1997" )
+							addElement( "1996" )
+							addElement( "1995" )
+							addElement( "1994" )
+							addElement( "1993" )
+							addElement( "1992" )
+							addElement( "1991" )
+							addElement( "1990" )
+							addElement( "1989" )
+							addElement( "1988" )
+							addElement( "1987" )
+							addElement( "1986" )
+							addElement( "1985" )
+							addElement( "1984" )
+							addElement( "1983" )
+							addElement( "1982" )
+							addElement( "1981" )
+							addElement( "1980" )
+							addElement( "1979" )
+							addElement( "1978" )
+							addElement( "1977" )
+							addElement( "1976" )
+							addElement( "1975" )
+							addElement( "1974" )
+							addElement( "1973" )
+							addElement( "1972" )
+							addElement( "1971" )
+							addElement( "1970" )
+							addElement( "1969" )
+							addElement( "1968" )
+							addElement( "1967" )
+							addElement( "1966" )
+							addElement( "1965" )
+							addElement( "1964" )
+							addElement( "1963" )
+							addElement( "1962" )
+							addElement( "1961" )
+							addElement( "1960" )
+							addElement( "1959" )
+							addElement( "1958" )
+							addElement( "1957" )
+							addElement( "1956" )
+							addElement( "1955" )
+							addElement( "1954" )
+							addElement( "1953" )
+							addElement( "1952" )
+							addElement( "1951" )
+							addElement( "1950" )
+							addElement( "1949" )
+							addElement( "1948" )
+							addElement( "1947" )
+							addElement( "1946" )
+							addElement( "1945" )
+							addElement( "1944" )
+							addElement( "1943" )
+							addElement( "1942" )
+							addElement( "1941" )
+							addElement( "1940" )
+							addElement( "1939" )
+							addElement( "1938" )
+							addElement( "1937" )
+							addElement( "1936" )
+							addElement( "1935" )
+							addElement( "1934" )
+							addElement( "1933" )
+							addElement( "1932" )
+							addElement( "1931" )
+							addElement( "1930" )
+							addElement( "1929" )
+							addElement( "1928" )
+							addElement( "1927" )
+							addElement( "1926" )
+							addElement( "1925" )
+							addElement( "1924" )
+							addElement( "1923" )
+							addElement( "1922" )
+							addElement( "1921" )
+							addElement( "1920" )
+							addElement( "1919" )
+							addElement( "1918" )
+							addElement( "1917" )
+							addElement( "1916" )
+							addElement( "1915" )
+							addElement( "1914" )
+							addElement( "1913" )
+							addElement( "1912" )
+							addElement( "1911" )
+							addElement( "1910" )
+							addElement( "1909" )
+							addElement( "1908" )
+							addElement( "1907" )
+							addElement( "1906" )
+							addElement( "1905" )
+							addElement( "1904" )
+							addElement( "1903" )
+							addElement( "1902" )
+							addElement( "1901" )
+							addElement( "1900" )
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 6
+						"gridy": 3
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "addressLabel"
+						"text": "Address"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 4
+						"gridx": 3
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "address"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 4
+						"gridy": 4
+						"gridwidth": 3
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "postcodeLabel"
+						"text": "Postcode"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 5
+						"gridx": 3
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "postcode"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 4
+						"gridy": 5
+						"gridwidth": 3
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "phoneLabel"
+						"text": "Phone number"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 6
+						"gridx": 3
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "phoneNumber"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 4
+						"gridy": 6
+						"gridwidth": 3
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "swapToServices"
+						"text": "next"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "swapToServicesActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 6
+						"gridy": 7
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "addPatient"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "0, 0, 0, 0, 0, 0, 0, 0"
+					"$rowSpecs": "0, 0, 0, 0, 0, 0, 0, 0, 0, 0"
+					"$hGap": 5
+					"$vGap": 5
+				} ) {
+					name: "patients"
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "comboBox7"
+						"model": #DefaultComboBoxModel0
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 3
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField8"
+						"text": "search"
+						"toolTipText": "Search"
+						"preferredSize": #Dimension0
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 1
+						"gridy": 3
+						"gridwidth": 3
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button8"
+						"text": "Advance search"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 4
+						"gridy": 3
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "radioButton7"
+						"text": "nhs"
+						"$buttonGroup": new FormReference( "nhsOrNot" )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 5
+						"gridy": 3
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "radioButton8"
+						"text": "non nhs"
+						"$buttonGroup": new FormReference( "nhsOrNot" )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 6
+						"gridy": 3
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "radioButton9"
+						"text": "both"
+						"$buttonGroup": new FormReference( "nhsOrNot" )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 7
+						"gridy": 3
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.CardLayout ) ) {
+						name: "panel5"
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane9"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "table9"
+								"rowSelectionAllowed": false
+								"model": #SwingTableModel0
+							} )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "card1"
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane10"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "table10"
+								"rowSelectionAllowed": false
+								"model": #SwingTableModel0
+							} )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "card2"
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane11"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "table11"
+								"rowSelectionAllowed": false
+								"model": #SwingTableModel0
+							} )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "card3"
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane12"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "table12"
+								"rowSelectionAllowed": false
+								"model": #SwingTableModel0
+							} )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "card4"
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 4
+						"gridwidth": 8
+						"gridheight": 4
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button4"
+						"text": "back to main menu"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 5
+						"gridy": 8
+						"gridwidth": 3
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "patients"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 55 )
+			"size": new java.awt.Dimension( 499, 302 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "nhsOrNot"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 9, 377 )
+		} )
+	}
+}
