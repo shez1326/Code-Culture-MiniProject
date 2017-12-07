@@ -1,6 +1,4 @@
 
-import java.sql.*;
-
 /**
  * GP
  *
@@ -34,10 +32,15 @@ public class GP {
         this.primaryID = primaryID;
     }
 
-    public String surgeryName() {
+    public String getSurgeryName() {
         return surgeryName;
     }
-
+       public void setSurgeryName(String surgery) {
+        this.surgeryName = surgery;
+    }
+   public String getAddress() {
+        return address;
+    }
     public void setAddress(String address) {
         this.address = address;
     }
@@ -45,11 +48,18 @@ public class GP {
     public String getPostcode() {
         return postcode;
     }
+      public void setPostcode(String postcode) {
+        this.postcode = postcode;
+    }
 
+    public Boolean getnhsORprivate() {
+        return nhsORprivate;
+    }
     public void setnhsORprivate(Boolean nhsORprivate) {
         this.nhsORprivate = nhsORprivate;
     }
-
+    
+// Obtaining the ID data from other tables
     public int getPatientID() {
         return patientID;
     }
